@@ -127,7 +127,7 @@ const About = () => {
     <AboutSection>
       <ProfileContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <ProfileImage>
-          <img src="/your-profile-image.jpg" alt={aboutData.name} />
+          <img src="/profilepic.jpg" alt={aboutData.name} />
         </ProfileImage>
 
         <ProfileInfo>

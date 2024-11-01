@@ -121,8 +121,8 @@ const ImageContainer = styled(motion.div)`
 `;
 
 const HeroImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -181,8 +181,8 @@ const Hero = () => {
 
   const shapes = [
     { size: "300px", top: "10%", left: "5%", color: "#0070f3" },
-    { size: "200px", bottom: "20%", right: "10%", color: "#ff0080" },
-    { size: "150px", top: "50%", left: "50%", color: "#7928ca" },
+    { size: "200px", top: "8%", right: "10%", color: "#ff0080" },
+    { size: "150px", bottom: "30%", left: "40%", color: "#7928ca" },
   ];
 
   return (
@@ -226,7 +226,10 @@ const Hero = () => {
             </TagLine>
 
             <motion.p variants={itemVariants}>
-              {profile?.summary || "Crafting efficient, user-centric web solutions"}
+              {/* {profile?.summary || "Crafting efficient, user-centric web solutions"} */}
+              {
+                "Full-Stack Web Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask. Successfully completed 500+ hours of intensive software development training at Actualize Coding Bootcamp, building multiple full-stack applications. Demonstrates exceptional ability to master new technologies, evidenced by Microsoft certifications in data analytics. Combines analytical thinking with creative problem-solving skills developed through a Bachelor's in Music Performance to deliver efficient, user-centric web solutions."
+              }
             </motion.p>
 
             <CTAButtons variants={itemVariants}>
@@ -245,7 +248,7 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <HeroImage src="/your-profile-image.jpg" alt="Jai Dhiman" loading="eager" />
+          <HeroImage src="/profilepic.jpg" loading="eager" />
         </ImageContainer>
       </HeroContent>
     </HeroSection>
