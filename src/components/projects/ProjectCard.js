@@ -13,7 +13,7 @@ const Card = styled(motion.div)`
 
 const ProjectImage = styled.div`
   width: 100%;
-  height: 275px;
+  height: 325px;
   background-image: url(${(props) => {
     if (!props.imageUrl) return "/default-project.jpg";
     const staticUrl = BASE_URL.replace("/api", "");
