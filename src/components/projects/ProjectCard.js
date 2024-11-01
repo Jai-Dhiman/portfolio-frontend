@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { BASE_URL } from "../../services/api";
 
 const Card = styled(motion.div)`
   background: white;
@@ -12,8 +13,12 @@ const Card = styled(motion.div)`
 
 const ProjectImage = styled.div`
   width: 100%;
-  height: 200px;
-  background-image: url(${(props) => props.imageUrl || "/default-project.jpg"});
+  height: 275px;
+  background-image: url(${(props) => {
+    if (!props.imageUrl) return "/default-project.jpg";
+    const staticUrl = BASE_URL.replace("/api", "");
+    return `${staticUrl}${props.imageUrl}`;
+  }});
   background-size: cover;
   background-position: center;
 `;
