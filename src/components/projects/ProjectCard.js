@@ -13,14 +13,15 @@ const Card = styled(motion.div)`
 
 const ProjectImage = styled.div`
   width: 100%;
-  height: 325px;
+  height: clamp(200px, 30vw, 300px);
+  background-color: black;
   background-image: url(${(props) => {
-    if (!props.imageUrl) return "/default-project.jpg";
     const staticUrl = BASE_URL.replace("/api", "");
     return `${staticUrl}${props.imageUrl}`;
   }});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 `;
 
 const ProjectContent = styled.div`
