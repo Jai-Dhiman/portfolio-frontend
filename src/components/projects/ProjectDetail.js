@@ -53,9 +53,6 @@ const ProjectDetail = () => {
   return (
     <DetailContainer initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
       <BackButton onClick={() => navigate("/projects")}>← Back to Projects</BackButton>
-
-      {/* Project content similar to card but with more details */}
-      {/* Add more sections as needed */}
     </DetailContainer>
   );
 };

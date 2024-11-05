@@ -111,9 +111,19 @@ const ProjectCard = ({ project, index }) => {
           ))}
         </TechStack>
         <Links>
-          {project.github_link && (
-            <LinkButton href={project.github_link} target="_blank" rel="noopener noreferrer" className="github">
-              GitHub
+          {project.frontend_github_link && (
+            <LinkButton
+              href={project.frontend_github_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github"
+            >
+              Frontend
+            </LinkButton>
+          )}
+          {project.backend_github_link && (
+            <LinkButton href={project.backend_github_link} target="_blank" rel="noopener noreferrer" className="github">
+              Backend
             </LinkButton>
           )}
           {/* {project.live_link && (
