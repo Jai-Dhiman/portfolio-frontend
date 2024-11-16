@@ -127,11 +127,11 @@ const ProjectCard = ({ project, index }) => {
               Backend
             </LinkButton>
           )}
-          {/* {project.live_link && (
+          {project.live_link && (
             <LinkButton href={project.live_link} target="_blank" rel="noopener noreferrer" className="live">
               Live Demo
             </LinkButton>
-          )} */}
+          )}
         </Links>
       </ProjectContent>
     </Card>

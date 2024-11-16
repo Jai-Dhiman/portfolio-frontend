@@ -26,24 +26,6 @@ export const useApi = (endpoint, initialData = null) => {
   return { data, loading, error };
 };
 
-// Example usage in components:
-/*
-const ProjectList = () => {
-  const { data: projects, loading, error } = useApi('getProjects');
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
-
-  return (
-    <div>
-      {projects.map(project => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
-    </div>
-  );
-};
-*/
-
 export const useSubmit = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -66,23 +48,3 @@ export const useSubmit = () => {
 
   return { submit, loading, error, success };
 };
-
-// Example usage for forms:
-/*
-const ContactForm = () => {
-  const { submit, loading, error, success } = useSubmit();
-
-  const handleSubmit = async (formData) => {
-    await submit('submitContact', formData);
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      {loading && <div>Submitting...</div>}
-      {error && <div>Error: {error}</div>}
-      {success && <div>Message sent successfully!</div>}
-      // form fields here
-    </form>
-  );
-};
-*/
