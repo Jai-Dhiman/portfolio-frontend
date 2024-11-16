@@ -59,6 +59,7 @@ const TechTag = styled.span`
 const Links = styled.div`
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 `;
 
 const LinkButton = styled.a`
