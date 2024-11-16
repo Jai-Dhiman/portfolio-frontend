@@ -77,14 +77,14 @@ const LinkButton = styled.a`
     }
   }
 
-  // &.live {
-  //   background: #0070f3;
-  //   color: white;
+  &.live {
+    background: #0070f3;
+    color: white;
 
-  //   &:hover {
-  //     background: #0051af;
-  //   }
-  // }
+    &:hover {
+      background: #0051af;
+    }
+  }
 `;
 
 const ProjectCard = ({ project, index }) => {
@@ -129,7 +129,7 @@ const ProjectCard = ({ project, index }) => {
           )}
           {project.live_link && (
             <LinkButton href={project.live_link} target="_blank" rel="noopener noreferrer" className="live">
-              Live Demo
+              Link
             </LinkButton>
           )}
         </Links>
