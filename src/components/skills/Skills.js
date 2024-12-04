@@ -79,9 +79,9 @@ const Skills = () => {
   if (!skills) return <div>Failed to load skills</div>;
 
   const skillCategories = {
-    "Languages & Frameworks": skills.technical.languages_frameworks,
-    "Data Technologies": skills.technical.data,
-    "Tools & Platforms": skills.technical.tools,
+    Frontend: skills.technical.languages_frameworks,
+    Backend: skills.technical.data,
+    "Tools & Infrastructure": skills.technical.tools,
   };
 
   return (

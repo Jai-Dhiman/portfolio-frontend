@@ -139,7 +139,7 @@ const About = () => {
 
       <ExperienceSection>
         <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-          Professional Experience
+          Experience and Education
         </motion.h2>
 
         {experience.map((exp, index) => (
